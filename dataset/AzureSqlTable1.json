@@ -1,0 +1,44 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Revision",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Created_Date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Created_By",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Ebinary_Checksum",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[staging].[Companydummy]"
+		}
+	}
+}
